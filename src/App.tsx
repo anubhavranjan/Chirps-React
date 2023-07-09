@@ -2,12 +2,41 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-
+import { Button } from "react-daisyui";
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
+      <div>
+        <Button color="primary" variant="outline">
+          Button
+        </Button>
+        <Button className="btn btn-secondary btn-outline">Button</Button>
+        <Button className="btn btn-neutral w-64 rounded-full">Button</Button>
+        <Button className="btn btn-accent w-64 rounded-full">Button</Button>
+        <Button className="btn btn-success w-64 rounded-full">Button</Button>
+        <Button className="btn btn-warning w-64 rounded-full">Button</Button>
+        <Button className="btn btn-error w-64 rounded-full">Button</Button>
+        <Button className="btn btn-info w-64 rounded-full">Button</Button>
+      </div>
+      {/* <div className="alert alert-info">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            className="stroke-current shrink-0 w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            ></path>
+          </svg>
+          <span>New software update available.</span>
+        </div>
+      </div>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -66,9 +95,9 @@ function App() {
       >
         <span className="font-medium">Dark alert!</span> Change a few things up
         and try submitting again.
-      </div>
+      </div> */}
 
-      <div
+      {/* <div
         id="sticky-banner"
         tabIndex="-1"
         className="fixed top-0 left-0 z-50 flex justify-between w-full p-4 border-b border-gray-200 bg-gray-50 dark:bg-gray-700 dark:border-gray-600"
@@ -122,7 +151,7 @@ function App() {
             <span className="sr-only">Close banner</span>
           </button>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
