@@ -1,14 +1,16 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-import "./App.css";
+//import "./App.css";
 import { Button } from "react-daisyui";
+import HomeNavbar from "./components/navbars/HomeNavbar.tsx";
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
+      <div className="w-full md:w-auto">
+        <HomeNavbar />
         <Button color="primary" variant="outline">
           Button
         </Button>
