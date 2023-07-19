@@ -2,25 +2,54 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 //import "./App.css";
-import { Button } from "react-daisyui";
+import { Button, ChatBubble } from "react-daisyui";
 import HomeNavbar from "./components/navbars/HomeNavbar.tsx";
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <div className="w-full md:w-auto">
+      <div className="w-full">
         <HomeNavbar />
-        <Button color="primary" variant="outline">
-          Button
-        </Button>
-        <Button className="btn btn-secondary btn-outline">Button</Button>
-        <Button className="btn btn-neutral w-64 rounded-full">Button</Button>
-        <Button className="btn btn-accent w-64 rounded-full">Button</Button>
-        <Button className="btn btn-success w-64 rounded-full">Button</Button>
-        <Button className="btn btn-warning w-64 rounded-full">Button</Button>
-        <Button className="btn btn-error w-64 rounded-full">Button</Button>
-        <Button className="btn btn-info w-64 rounded-full">Button</Button>
+        <div>
+          <Button className="m-1" color="primary">
+            Primary
+          </Button>
+          <Button className="m-1" color="primary" variant="outline">
+            Secondary
+          </Button>
+          <Button className="m-1" color="success">
+            Success
+          </Button>
+          <Button className="m-1" color="warning">
+            Success
+          </Button>
+          <Button className="m-1" color="error">
+            Success
+          </Button>
+          <Button className="m-1" disabled>
+            Disabled
+          </Button>
+        </div>
+        <ChatBubble>
+          4{" "}
+          <ChatBubble.Header>
+            5 Obi-Wan Kenobi <ChatBubble.Time>12:45</ChatBubble.Time>6{" "}
+          </ChatBubble.Header>
+          7 <ChatBubble.Avatar src="https://placeimg.com/192/192/people" />8{" "}
+          <ChatBubble.Message>You were the Chosen One!</ChatBubble.Message>9{" "}
+        </ChatBubble>
+        10 11{" "}
+        <ChatBubble end>
+          12{" "}
+          <ChatBubble.Header>
+            13 Anakin <ChatBubble.Time>12:46</ChatBubble.Time>
+            14{" "}
+          </ChatBubble.Header>
+          15 <ChatBubble.Avatar src="https://placeimg.com/192/192/people" />
+          16 <ChatBubble.Message>I hate you!</ChatBubble.Message>
+          17{" "}
+        </ChatBubble>
       </div>
       {/* <div className="alert alert-info">
           <svg
